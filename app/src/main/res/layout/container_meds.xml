@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:clickable="true"
+android:orientation="horizontal"
+android:padding="10dp"
+    android:focusable="true">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Pharmacy"
+    android:id="@+id/textPharmName"
+    android:layout_marginLeft="5dp"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="Stock"
+    android:visibility="gone"
+    android:id="@+id/textStock"
+    android:textColor="@color/colorAccent"
+    android:layout_alignParentRight="true"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="Medicine"
+    android:id="@+id/textMedName"
+    android:layout_marginLeft="5dp"
+    android:layout_below="@id/textPharmName"
+    android:textColor="#666"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="MG"
+    android:id="@+id/textMG"
+    android:layout_marginLeft="5dp"
+    android:layout_below="@id/textMedName"
+    android:textColor="#666"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="MG"
+        android:id="@+id/textPack"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textMG"
+        android:textColor="#666"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LAT"
+        android:visibility="gone"
+
+        android:id="@+id/textLat"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textPack"
+        android:textColor="#666"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="LONG"
+        android:visibility="gone"
+        android:id="@+id/textLong"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/textLat"
+        android:textColor="#666"/>
+
+
+</RelativeLayout>

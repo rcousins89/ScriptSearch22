@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:paddingLeft="30dp"
+android:paddingRight="30dp"
+android:paddingTop="130dp"
+tools:context=".RegisterActivity">
+
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="193dp"
+    android:layout_height="116dp"
+    app:srcCompat="@drawable/scriptlogo" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:textColor="#48B9EC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="#48B9EC" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:passwordToggleEnabled="true">
+
+    <EditText
+        android:id="@+id/password"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:textColor="#48B9EC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:passwordToggleEnabled="true">
+
+    <EditText
+        android:id="@+id/c_password"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:textColor="#48B9EC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+<androidx.core.widget.ContentLoadingProgressBar
+    android:id="@+id/loading"
+    android:layout_marginTop="30dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+
+</androidx.core.widget.ContentLoadingProgressBar>
+
+<Button
+    android:id="@+id/btn_regist"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:backgroundTint="#48B9EC"
+    android:text="Register"
+    android:textColor="@android:color/white" />
+</LinearLayout>

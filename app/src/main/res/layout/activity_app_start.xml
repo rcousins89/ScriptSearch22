@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="130dp"
+    tools:context=".AppStartActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Welcome to ScriptSearch"
+        android:textColor="#48B9EC"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/link_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Start Searching"
+        android:textAllCaps="false"
+        android:textColor="#48B9EC"
+        android:textIsSelectable="false"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+"
+
+    <Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Log out"
+android:textAllCaps="false"
+android:id="@+id/logout"
+android:textColor="@android:color/white"
+android:background="#48B9EC"
+android:layout_marginTop="200dp"
+android:layout_marginBottom="10dp"        />
+
+
+</LinearLayout>
+
